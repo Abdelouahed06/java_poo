@@ -27,18 +27,13 @@ public class Main {
         System.out.println("Chase type pf operator : ");
         String operator = sc.next();
 
-        switch (operator) {
-            case "+":
-                return number01 + number02;
-            case "-":
-                return number01 - number02;
-            case "*":
-                return number01 * number02;
-            case "/":
-                return number01 / number02;
-            default:
-                return 0;
-        }
+        return switch (operator) {
+            case "+" -> number01 + number02;
+            case "-" -> number01 - number02;
+            case "*" -> number01 * number02;
+            case "/" -> number01 / number02;
+            default -> 0;
+        };
     }
 
     public static void main(String[] args) {
