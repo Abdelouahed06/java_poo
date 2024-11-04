@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 //    public static long toMilesPerHour(double kilometersPerHour) {
 //        if (kilometersPerHour < 0) {
@@ -14,12 +15,33 @@ public class Main {
 //            System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
 //        }
 //    }
-    public static String cheknegativ(int number){
-        String m = (number > 0) ? " number is positive" :"number is negative";
-        return m;
+    public static int calc() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Entre first number : ");
+        int number01 = sc.nextInt();
+
+        System.out.println("Entre second number : ");
+        int number02 = sc.nextInt();
+
+        System.out.println("Chase type pf operator : ");
+        String operator = sc.next();
+
+        switch (operator) {
+            case "+":
+                return number01 + number02;
+            case "-":
+                return number01 - number02;
+            case "*":
+                return number01 * number02;
+            case "/":
+                return number01 / number02;
+            default:
+                return 0;
+        }
     }
 
     public static void main(String[] args) {
-        System.out.println(cheknegativ(-7));
+        System.out.println(calc());
     }
 }
