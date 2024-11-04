@@ -15,8 +15,8 @@ public class Main {
 //        }
 //    }
     public static String cheknegativ(int number){
-        String msg = (number > 0) ? " number is positive" :"number is negative";
-        return msg;
+        String m = (number > 0) ? " number is positive" :"number is negative";
+        return m;
     }
 
     public static void main(String[] args) {
