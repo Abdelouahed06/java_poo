@@ -42,10 +42,12 @@ public class Main {
         int numberNot = sc.nextInt();
         float total=0;
 
-        for (int i = 1; i <= numberNot; i++ ){
+        int i = 1;
+        while (i <= numberNot) {
             System.out.println("Enter note number : " + i);
             float note = Float.parseFloat(sc.next());
             total = total + note;
+            i++;
         }
         float moy = total / numberNot;
         System.out.println("Moy =  " + moy);
