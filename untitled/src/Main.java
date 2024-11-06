@@ -36,9 +36,24 @@ public class Main {
 //        };
 //    }
 
+    public static void  calcMoy(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter how much note that u want to calc : ");
+        int numberNot = sc.nextInt();
+        float total=0;
+
+        for (int i = 1; i <= numberNot; i++ ){
+            System.out.println("Enter note number : " + i);
+            float note = Float.parseFloat(sc.next());
+            total = total + note;
+        }
+        float moy = total / numberNot;
+        System.out.println("Moy =  " + moy);
+    }
+
 
 
     public static void main(String[] args) {
-        System.out.println("hello");
+        calcMoy();
     }
 }
