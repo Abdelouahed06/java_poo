@@ -38,7 +38,7 @@ public class Main {
 
     public static void  calcMoy(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter how much note that u want to calc : ");
+        System.out.println("Enter how much note : ");
         int numberNot = sc.nextInt();
         float total=0;
 
