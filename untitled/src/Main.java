@@ -44,7 +44,7 @@ public class Main {
 
         int i = 1;
         while (i <= numberNot) {
-            System.out.println("Enter note number : " + i);
+            System.out.println("Enter number note : " + i);
             float note = Float.parseFloat(sc.next());
             total = total + note;
             i++;
