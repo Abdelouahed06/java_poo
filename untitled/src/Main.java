@@ -15,15 +15,6 @@ public class Main {
         }
         float moy = total / numberNot;
 
-        // switch Syntax
-        // return switch (o) {
-        //     case "+" -> number01 + number02;
-        //     case "-" -> number01 - number02;
-        //     case "*" -> number01 * number02;
-        //     case "/" -> number01 / number02;
-        //     default -> 0;
-        // };
-
         System.out.println("Moy =  " + moy);
     }
 
